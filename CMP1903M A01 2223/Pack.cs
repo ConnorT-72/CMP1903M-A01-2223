@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//i wont lie, i got no idea what i am doing
+
 namespace CMP1903M_A01_2223
 {
     class Pack
     {
         List<Card> pack;
-
+        
         public Pack()
         {
             //Initialise the card pack here
@@ -18,7 +21,7 @@ namespace CMP1903M_A01_2223
         public static bool shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
-
+            
         }
         public static Card deal()
         {
