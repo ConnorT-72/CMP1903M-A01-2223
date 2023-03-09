@@ -5,7 +5,7 @@ namespace CMP1903M_A01_2223
 {
     public class Pack
     {
-        List<Card> pack;
+        readonly List<Card> pack;
 
         //Card[] cards = new Card[52];
         //string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"  };
@@ -27,8 +27,8 @@ namespace CMP1903M_A01_2223
 
         }
 
-        public static bool ShuffleCardPack(int typeOfShuffle)
-        {
+       // public static bool ShuffleCardPack(int typeOfShuffle)
+        //{
             //Shuffles the pack based on the type of shuffle
             //Random r = new Random();
 
@@ -40,27 +40,27 @@ namespace CMP1903M_A01_2223
 
 
 
-        }
+        //}
 
 
 
-        public static Card deal()
-        {
-            string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K" };
-            Card[] cards = new Card[52];
-        }
+        //public static Card deal()
+        //{
+            //string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K" };
+            //Card[] cards = new Card[52];
+        //}
 
 
 
 
 
 
-        public static List<Card> DealCard(int amount)
-        {
+        //public static List<Card> DealCard(int amount)
+        //{
             //Deals the number of cards specified by 'amount'
             
 
-        }
+        //}
             
                
             static public class FisherYates
@@ -77,6 +77,15 @@ namespace CMP1903M_A01_2223
                         pack[k] = temp;
                     }
                 }
+            }
+
+            
+            public Card[] Cards
+            {
+            get
+            {
+                return Cards;
+            }
             }
         
     }
