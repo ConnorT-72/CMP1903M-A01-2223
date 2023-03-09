@@ -24,6 +24,8 @@ namespace CMP1903M_A01_2223
         public static bool shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
+            typeOfShuffle = 1;
+            
 
         }
         
