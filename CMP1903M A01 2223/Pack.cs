@@ -9,8 +9,8 @@ namespace CMP1903M_A01_2223
 
         public int currentCard = -1;
 
-        //not sure what to do here
-
+        
+        
         public Pack()
         {
             //Initialise the card pack here
