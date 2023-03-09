@@ -11,12 +11,16 @@
         {
             face = faceValue;
             suit = suitVal;
+            
 
         }
 
         public override string ToString()
         {
+            
+            
             return face + "of" + suit;
+            
         }
 
 

@@ -3,49 +3,81 @@ using System.Collections.Generic;
 
 namespace CMP1903M_A01_2223
 {
-    class Pack
+    public class Pack
     {
         List<Card> pack;
 
-        public int currentCard = -1;
+        //Card[] cards = new Card[52];
+        //string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"  };
 
         
         
+
+
+
         public Pack()
         {
             //Initialise the card pack here
-            string[] faces = { "Ace", "Deuce", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
-            string[] suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
-            currentCard = -1;
+            string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K" };
+            Card[] cards = new Card[52];
 
-
-        }
-
-        public static bool shuffleCardPack(int typeOfShuffle)
-        {
-            //Shuffles the pack based on the type of shuffle
-            typeOfShuffle = 1;
+            
             
 
+
         }
-        
+
+        public static bool ShuffleCardPack(int typeOfShuffle)
+        {
+            //Shuffles the pack based on the type of shuffle
+            //Random r = new Random();
+
+            
+
+
+
+
+
+
+
+        }
+
 
 
         public static Card deal()
         {
 
         }
-        
-           
-            
-    
 
-        
-        public static List<Card> dealCard(int amount)
+
+
+
+
+
+        public static List<Card> DealCard(int amount)
         {
             //Deals the number of cards specified by 'amount'
-            Console.WriteLine("fuck");
+            
+
         }
+            
+               
+            static public class FisherYates
+            {
+                static Random r = new Random();
+            
+                static public void Shuffle(int[] pack)
+                {
+                    for (int n = pack.Length - 1; n > 0; --n)
+                    {
+                        int k = r.Next(n + 1);
+                        int temp = pack[n];
+                        pack[n] = pack[k];
+                        pack[k] = temp;
+                    }
+                }
+            }
+        
     }
 
 
