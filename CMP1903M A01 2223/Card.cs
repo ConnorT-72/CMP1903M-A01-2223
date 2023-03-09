@@ -5,8 +5,8 @@
         string face;
         string suit;
 
-        string[] faces = {"Ace", "Deuce", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
-        string[] suits = {"Hearts", "Diamonds", "Clubs", "Spades" };
+        string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K" };
+        Card[] cards = new Card[52];
         public Card(string faceValue, string suitVal)
         {
             face = faceValue;
