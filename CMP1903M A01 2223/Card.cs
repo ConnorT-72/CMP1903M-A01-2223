@@ -11,6 +11,8 @@ namespace CMP1903M_A01_2223
         string face;
         string suit;
 
+        //string[] faces = {"Ace", "Deuce", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
+        //string[] suits = {"Hearts", "Diamonds", "Clubs", "Spades" };
         public Card(string faceValue, string suitVal)
         {
             face = faceValue;
