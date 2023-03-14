@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
@@ -10,7 +6,16 @@ namespace CMP1903M_A01_2223
     {
         static void Main(string[] args)
         {
-
+            Pack myPack = new Pack();
+            
+            foreach (Card c in myPack.Cards)
+                {
+                    Console.WriteLine(c);
+                }
+            Console.WriteLine("How many shuffles do you want?");
+            
+                
+            
         }
     }
 }

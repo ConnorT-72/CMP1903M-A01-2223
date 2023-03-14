@@ -1,36 +1,95 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-//i wont lie, i got no idea what i am doing
 
 namespace CMP1903M_A01_2223
 {
-    class Pack
+    public class Pack
     {
-        List<Card> pack;
+        readonly List<Card> pack;
+
+        //Card[] cards = new Card[52];
+        //string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"  };
+
         
+        
+
+
+
         public Pack()
         {
             //Initialise the card pack here
-        }
+            string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K" };
+            Card[] cards = new Card[52];
 
-        public static bool shuffleCardPack(int typeOfShuffle)
-        {
-            //Shuffles the pack based on the type of shuffle
             
-        }
-        public static Card deal()
-        {
-            //Deals one card
+            
+
 
         }
-        public static List<Card> dealCard(int amount)
-        {
+
+       // public static bool ShuffleCardPack(int typeOfShuffle)
+        //{
+            //Shuffles the pack based on the type of shuffle
+            //Random r = new Random();
+
+            
+
+
+
+
+
+
+
+        //}
+
+
+
+        //public static Card deal()
+        //{
+            //string[] numbers = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K" };
+            //Card[] cards = new Card[52];
+        //}
+
+
+
+
+
+
+        //public static List<Card> DealCard(int amount)
+        //{
             //Deals the number of cards specified by 'amount'
-        }
+            
+
+        //}
+            
+               
+            static public class FisherYates
+            {
+                static Random r = new Random();
+            
+                static public void Shuffle(int[] pack)
+                {
+                    for (int n = pack.Length - 1; n > 0; --n)
+                    {
+                        int k = r.Next(n + 1);
+                        int temp = pack[n];
+                        pack[n] = pack[k];
+                        pack[k] = temp;
+                    }
+                }
+            }
+
+            
+            public Card[] Cards
+            {
+            get
+            {
+                return Cards;
+            }
+            }
+        
     }
+
+
+
 }
