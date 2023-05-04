@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>CMP1903M_A01_2223</RootNamespace>
     <AssemblyName>CMP1903M A01 2223</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
